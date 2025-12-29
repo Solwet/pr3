@@ -43,7 +43,7 @@ check_and_log() {
         echo "$url - OK - $TIMESTAMP"
     else
         echo "$url - FAIL (HTTP $http_code) - $TIMESTAMP"
-        echo "[$TIMESTAMP] $url → HTTP $http_code" >> "$ERROR_LOG"
+        echo "[$TIMESTAMP] $url > HTTP $http_code" >> "$ERROR_LOG"
     fi
 }
 
